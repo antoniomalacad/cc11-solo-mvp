@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Latte",
+    "description": "Espresso shot with steamed milk"
+  },
+  {
+    "id": 2,
+    "name": "Americano",
+    "description": "Espresso shot with hot water"
+  },
+  {
+    "id": 3,
+    "name": "Cappucino",
+    "description": "Espresso shot with steamed milk and foam"
+  },
+  {
+    "id": 4,
+    "name": "Espresso",
+    "description": "Concentrated coffee brewed under high pressure steam"
+  },
+  {
+    "id": 5,
+    "name": "Drip Coffee",
+    "description": "Coffee brewed with hot water over a filter"
+  }
+]

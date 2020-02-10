@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "Do you like the taste of coffee?"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following do you prefer?"
+  },
+  {
+    "id": 3,
+    "question": "Is a small amount of coffee a dealbreaker?"
+  },
+  {
+    "id": 4,
+    "question": "Do you like the taste of milk?"
+  },
+  {
+    "id": 5,
+    "question": "Do you prefer your drinks foamy or smooth?"
+  },
+  {
+    "id": 6,
+    "question": "How about milk with ...?"
+  }
+]

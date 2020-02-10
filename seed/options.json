@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "q_id": 1,
+    "option": "Yes"
+  },
+  {
+    "id": 2,
+    "q_id": 1,
+    "option": "Not really"
+  },
+  {
+    "id": 3,
+    "q_id": 1,
+    "option": "No"
+  },
+  {
+    "id": 4,
+    "q_id": 2,
+    "option": "Strong, bold flavors"
+  },
+  {
+    "id": 5,
+    "q_id": 2,
+    "option": "A smooth, mild tasting experience"
+  },
+  {
+    "id": 6,
+    "q_id": 2,
+    "option": "Somewhere in the middle"
+  },
+  {
+    "id": 7,
+    "q_id": 3,
+    "option": "Yes it is"
+  },
+  {
+    "id": 8,
+    "q_id": 3,
+    "option": "I'm fine with a small amount"
+  },
+  {
+    "id": 9,
+    "q_id": 4,
+    "option": "Yes"
+  },
+  {
+    "id": 10,
+    "q_id": 4,
+    "option": "Not by itself"
+  },
+  {
+    "id": 11,
+    "q_id": 4,
+    "option": "No"
+  },
+  {
+    "id": 12,
+    "q_id": 5,
+    "option": "Chocolate"
+  },
+  {
+    "id": 13,
+    "q_id": 5,
+    "option": "Caramel"
+  }
+]
