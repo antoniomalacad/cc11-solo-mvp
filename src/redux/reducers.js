@@ -1,5 +1,8 @@
 const defaultState = {
-  recommended: []
+  startQuiz: false,
+  recommended: [],
+  questions: `To begin hit the start button!`,
+  options: ["Start!"]
 };
 
 const reducer = (state = defaultState, action) => {

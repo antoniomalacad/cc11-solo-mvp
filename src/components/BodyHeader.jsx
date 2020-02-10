@@ -1,12 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 export default function BodyHeader() {
+  const questions = useSelector(state => state.questions);
   return (
     <>
-      <div className="Body-header">
-        Can't decide on a coffee? Let us choose for you! <br />
-        To begin hit the start button!
-      </div>
+      <div className="Body-header">{questions}</div>
     </>
   );
 }
