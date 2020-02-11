@@ -21,7 +21,17 @@
   },
   {
     "id": 5,
-    "name": "Drip Coffee",
+    "name": "Drip coffee",
     "description": "Coffee brewed with hot water over a filter"
+  },
+  {
+    "id": 6,
+    "name": "Cafe mocha",
+    "description": "Espresso shot with steamed milk, chocolate syrup,and whipped cream"
+  },
+  {
+    "id": 7,
+    "name": "Caramel latte",
+    "description": "Latte with caramel syrup for added sweetness"
   }
 ]
