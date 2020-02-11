@@ -1,18 +1,44 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addQuestions,
+  changeQuestionIndex,
+  changeQuestion,
+  changeOptions
+} from "../redux/actions";
+import axios from "axios";
 
 export default function Choices() {
   const options = useSelector(state => state.options);
-  useEffect(() => {}, []);
-  const beginQuiz = () => {
-    //API Call to Database to populate questions and choices state//
+  const questionBank = useSelector(state => state.questionBank);
+  const questionIndex = useSelector(state => state.questionIndex);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const updateChoices = async () => {
+      await axios.get(`/api/options/${questionIndex}`).then(res => {
+        const options = res.data;
+        dispatch(changeOptions(options));
+      });
+    };
+    updateChoices();
+  }, [questionIndex]);
+
+  const selectResponse = async () => {
+    // await axios.get("/api/questions").then(res => {
+    //   const questions = res.data;
+    //   dispatch(addQuestions(questions));
+    //   dispatch(changeQuestionIndex(1));
+    //   console.log(questionBank);
+    //   console.log(questionIndex);
+    // });
   };
 
   const renderChoices = () => {
-    return options.map((option, index) => {
+    return options.map(option => {
       return (
-        <div className="choice" value={option} key={index}>
-          {option}
+        <div className="choice" value={option.option} key={option.id}>
+          {option.option}
         </div>
       );
     });
@@ -20,7 +46,7 @@ export default function Choices() {
 
   return (
     <>
-      <div className="Body-choices" onClick={beginQuiz}>
+      <div className="Body-choices" onClick={selectResponse}>
         {renderChoices()}
       </div>
     </>
