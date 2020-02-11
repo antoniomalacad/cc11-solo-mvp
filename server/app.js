@@ -16,4 +16,48 @@ app.use(
 // Serve static assets
 app.use(express.static(path.resolve(__dirname, "..", "build")));
 
+app.get("/api/menus", async (req, res) => {
+  try {
+    const menu = await db.select().table("menu");
+    const result = Object.values(menu);
+    res.json(result);
+  } catch (err) {
+    console.error("Error loading menu!", err);
+    res.sendStatus(500);
+  }
+});
+
+app.get("/api/questions", async (req, res) => {
+  try {
+    const questions = await db.select().table("questions");
+    const result = Object.values(questions);
+    res.json(result);
+  } catch (err) {
+    console.error("Error loading questions!", err);
+    res.sendStatus(500);
+  }
+});
+
+app.get("/api/options", async (req, res) => {
+  try {
+    const options = await db.select().table("options");
+    const result = Object.values(options);
+    res.json(result);
+  } catch (err) {
+    console.error("Error loading options!", err);
+    res.sendStatus(500);
+  }
+});
+
+app.get("/api/responses", async (req, res) => {
+  try {
+    const responses = await db.select().table("responses");
+    const result = Object.values(responses);
+    res.json(result);
+  } catch (err) {
+    console.error("Error loading responses!", err);
+    res.sendStatus(500);
+  }
+});
+
 module.exports = app;
