@@ -107,4 +107,19 @@ app.get("/api/responses", async (req, res) => {
   }
 });
 
+app.post("/api/responses", async (req, res) => {
+  const { request } = req.query;
+  try {
+    const input = JSON.parse(request);
+    await db("responses")
+      .insert(input)
+      .then(() => {
+        res.sendStatus(200);
+      });
+  } catch (err) {
+    console.error("Error posting response!", err);
+    res.sendStatus(500);
+  }
+});
+
 module.exports = app;
