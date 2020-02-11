@@ -2,66 +2,79 @@
   {
     "id": 1,
     "q_id": 1,
-    "option": "Yes"
+    "option": "Yes",
+    "next_q": 2
   },
   {
     "id": 2,
     "q_id": 1,
-    "option": "Not really"
+    "option": "Not really",
+    "next_q": 4
   },
   {
     "id": 3,
     "q_id": 1,
-    "option": "No"
+    "option": "No",
+    "next_q": null
   },
   {
     "id": 4,
     "q_id": 2,
-    "option": "Strong, bold flavors"
+    "option": "Strong, bold flavors",
+    "next_q": 3
   },
   {
     "id": 5,
     "q_id": 2,
-    "option": "A smooth, mild tasting experience"
+    "option": "A smooth, mild tasting experience",
+    "next_q": null
   },
   {
     "id": 6,
     "q_id": 2,
-    "option": "Somewhere in the middle"
+    "option": "Somewhere in the middle",
+    "next_q": null
   },
   {
     "id": 7,
     "q_id": 3,
-    "option": "Yes it is"
+    "option": "Yes it is",
+    "next_q": null
   },
   {
     "id": 8,
     "q_id": 3,
-    "option": "I'm fine with a small amount"
+    "option": "I'm fine with a small amount",
+    "next_q": null
   },
   {
     "id": 9,
     "q_id": 4,
-    "option": "Yes"
+    "option": "Yes",
+    "next_q": 5
   },
   {
     "id": 10,
     "q_id": 4,
-    "option": "Not by itself"
+    "option": "Not by itself",
+    "next_q": 6
   },
   {
     "id": 11,
     "q_id": 4,
-    "option": "No"
+    "option": "No",
+    "next_q": null
   },
   {
     "id": 12,
     "q_id": 5,
-    "option": "Chocolate"
+    "option": "Chocolate",
+    "next_q": null
   },
   {
     "id": 13,
     "q_id": 5,
-    "option": "Caramel"
+    "option": "Caramel",
+    "next_q": null
   }
 ]

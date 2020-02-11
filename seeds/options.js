@@ -9,7 +9,8 @@ exports.seed = function(knex) {
           return {
             id: entry.id,
             q_id: entry.q_id,
-            option: entry.option
+            option: entry.option,
+            next_q: entry.next_q
           };
         })
       );

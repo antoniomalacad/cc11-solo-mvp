@@ -39,3 +39,10 @@ export function changeOptions(options) {
     options: options
   };
 }
+
+export function changeResponse(selection) {
+  return {
+    type: "CHANGE_RESPONSE",
+    selection: selection
+  };
+}

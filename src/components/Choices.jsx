@@ -4,7 +4,8 @@ import {
   addQuestions,
   changeQuestionIndex,
   changeQuestion,
-  changeOptions
+  changeOptions,
+  changeResponse
 } from "../redux/actions";
 import axios from "axios";
 
@@ -12,6 +13,7 @@ export default function Choices() {
   const options = useSelector(state => state.options);
   const questionBank = useSelector(state => state.questionBank);
   const questionIndex = useSelector(state => state.questionIndex);
+  const responses = useSelector(state => state.responses);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -24,20 +26,18 @@ export default function Choices() {
     updateChoices();
   }, [questionIndex]);
 
-  const selectResponse = async () => {
-    // await axios.get("/api/questions").then(res => {
-    //   const questions = res.data;
-    //   dispatch(addQuestions(questions));
-    //   dispatch(changeQuestionIndex(1));
-    //   console.log(questionBank);
-    //   console.log(questionIndex);
-    // });
+  const selectResponse = async e => {
+    const selected = e.target.getAttribute("value");
+    const newSelected = JSON.parse(selected);
+    dispatch(changeResponse(newSelected));
+    // await axios.post("/api/responses", newSelected);
+    console.log(newSelected);
   };
 
   const renderChoices = () => {
     return options.map(option => {
       return (
-        <div className="choice" value={option.option} key={option.id}>
+        <div className="choice" value={JSON.stringify(option)} key={option.id}>
           {option.option}
         </div>
       );

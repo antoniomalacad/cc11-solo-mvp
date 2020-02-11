@@ -37,6 +37,11 @@ const reducer = (state = defaultState, action) => {
         ...state,
         options: [...action.options]
       };
+    case "CHANGE_RESPONSE":
+      return {
+        ...state,
+        responses: [...state.responses, action.selection]
+      };
     default:
       return state;
   }
