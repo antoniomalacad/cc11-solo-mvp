@@ -46,3 +46,23 @@ export function changeResponse(selection) {
     selection: selection
   };
 }
+
+export function finishQuiz(finish) {
+  return {
+    type: "FINISH_QUIZ",
+    finish: finish
+  };
+}
+
+export function addRecommended(result) {
+  return {
+    type: "ADD_RECOMMENDED",
+    result: result
+  };
+}
+
+export function resetState() {
+  return {
+    type: "RESET"
+  };
+}

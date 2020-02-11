@@ -3,90 +3,105 @@
     "id": 1,
     "q_id": 1,
     "option": "Yes",
-    "next_q": 2
+    "next_q": 2,
+    "drink_id": null
   },
   {
     "id": 2,
     "q_id": 1,
     "option": "Not really",
-    "next_q": 4
+    "next_q": 4,
+    "drink_id": null
   },
   {
     "id": 3,
     "q_id": 1,
     "option": "No",
-    "next_q": null
+    "next_q": null,
+    "drink_id": null
   },
   {
     "id": 4,
     "q_id": 2,
     "option": "Strong, bold flavors",
-    "next_q": 3
+    "next_q": 3,
+    "drink_id": null
   },
   {
     "id": 5,
     "q_id": 2,
     "option": "A smooth, mild tasting experience",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 5
   },
   {
     "id": 6,
     "q_id": 2,
     "option": "Somewhere in the middle",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 2
   },
   {
     "id": 7,
     "q_id": 3,
     "option": "Yes it is",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 2
   },
   {
     "id": 8,
     "q_id": 3,
     "option": "I'm fine with a small amount",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 4
   },
   {
     "id": 9,
     "q_id": 4,
     "option": "Yes",
-    "next_q": 5
+    "next_q": 5,
+    "drink_id": null
   },
   {
     "id": 10,
     "q_id": 4,
     "option": "Not by itself",
-    "next_q": 6
+    "next_q": 6,
+    "drink_id": null
   },
   {
     "id": 11,
     "q_id": 4,
     "option": "No",
-    "next_q": null
+    "next_q": null,
+    "drink_id": null
   },
   {
     "id": 12,
     "q_id": 5,
     "option": "Foamy",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 3
   },
   {
     "id": 13,
     "q_id": 5,
     "option": "Smooth",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 1
   },
   {
     "id": 14,
     "q_id": 6,
     "option": "Chocolate",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 6
   },
   {
     "id": 15,
     "q_id": 6,
     "option": "Caramel",
-    "next_q": null
+    "next_q": null,
+    "drink_id": 7
   }
 ]

@@ -10,7 +10,8 @@ exports.seed = function(knex) {
             id: entry.id,
             q_id: entry.q_id,
             option: entry.option,
-            next_q: entry.next_q
+            next_q: entry.next_q,
+            drink_id: entry.drink_id
           };
         })
       );

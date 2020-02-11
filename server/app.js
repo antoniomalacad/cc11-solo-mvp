@@ -85,7 +85,7 @@ app.get("/api/options/:q_id", async (req, res) => {
   const questionNum = req.params.q_id;
   try {
     const options = await db
-      .select("id", "option", "next_q")
+      .select("id", "option", "next_q", "drink_id")
       .table("options")
       .where({ q_id: questionNum });
     const result = Object.values(options);

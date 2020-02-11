@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { changeQuestion } from "../redux/actions";
-// import axios from "axios";
 
 export default function BodyHeader() {
-  // let question = useSelector(state => state.question);
   const questionIndex = useSelector(state => state.questionIndex);
   const questionBank = useSelector(state => state.questionBank);
   const quizStart = useSelector(state => state.quizStart);
@@ -21,7 +19,7 @@ export default function BodyHeader() {
       }
     };
     updateQuestion();
-  }, [questionIndex, dispatch, quizStart]);
+  }, [questionIndex, dispatch, quizStart, questionBank]);
 
   let question = useSelector(state => state.question);
   const renderQuestion = () => {

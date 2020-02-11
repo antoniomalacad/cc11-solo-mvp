@@ -1,19 +1,17 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  addQuestions,
   changeQuestionIndex,
-  changeQuestion,
   changeOptions,
-  changeResponse
+  changeResponse,
+  finishQuiz,
+  changeQuestion
 } from "../redux/actions";
 import axios from "axios";
 
 export default function Choices() {
   const options = useSelector(state => state.options);
-  const questionBank = useSelector(state => state.questionBank);
   const questionIndex = useSelector(state => state.questionIndex);
-  const responses = useSelector(state => state.responses);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -24,14 +22,20 @@ export default function Choices() {
       });
     };
     updateChoices();
-  }, [questionIndex]);
+  }, [questionIndex, dispatch]);
 
   const selectResponse = async e => {
     const selected = e.target.getAttribute("value");
     const newSelected = JSON.parse(selected);
     dispatch(changeResponse(newSelected));
     // await axios.post("/api/responses", newSelected);
-    dispatch(changeQuestionIndex(newSelected.next_q));
+    if (newSelected.next_q !== null) {
+      dispatch(changeQuestionIndex(newSelected.next_q));
+    } else {
+      dispatch(finishQuiz(true));
+      dispatch(changeOptions([]));
+      dispatch(changeQuestion({ question: "Your results are in!" }));
+    }
   };
 
   const renderChoices = () => {
