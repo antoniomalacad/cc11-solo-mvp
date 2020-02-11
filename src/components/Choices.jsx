@@ -31,7 +31,7 @@ export default function Choices() {
     const newSelected = JSON.parse(selected);
     dispatch(changeResponse(newSelected));
     // await axios.post("/api/responses", newSelected);
-    console.log(newSelected);
+    dispatch(changeQuestionIndex(newSelected.next_q));
   };
 
   const renderChoices = () => {

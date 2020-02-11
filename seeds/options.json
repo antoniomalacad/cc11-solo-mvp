@@ -68,12 +68,24 @@
   {
     "id": 12,
     "q_id": 5,
-    "option": "Chocolate",
+    "option": "Foamy",
     "next_q": null
   },
   {
     "id": 13,
     "q_id": 5,
+    "option": "Smooth",
+    "next_q": null
+  },
+  {
+    "id": 14,
+    "q_id": 6,
+    "option": "Chocolate",
+    "next_q": null
+  },
+  {
+    "id": 15,
+    "q_id": 6,
     "option": "Caramel",
     "next_q": null
   }
