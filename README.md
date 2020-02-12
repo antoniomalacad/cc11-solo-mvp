@@ -83,7 +83,7 @@ Run this script if you made changes to the table schemas in the migrations folde
 ### `yarn seed`
 
 Populates the tables in the local database with the seed data found in the seeds folder. <br />
-Run this script if you made changs to the table schemas or the seed data.
+Run this script if you made changes to the table schemas or the seed data.
 
 ### `yarn start`
 
