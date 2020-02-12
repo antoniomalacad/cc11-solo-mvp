@@ -4,7 +4,7 @@ This was created during my time as a student at Code Chrysalis.
 
 Coffee Picker is an app that helps the user select a coffee based on a set of questions.
 
-To use this app follow the following link:
+To use this app follow the following link: https://cc11-solo-mvp.herokuapp.com/
 
 To modify its implementation or check under the hood, follow the quick setup below.
 
