@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { resetState } from "../redux/actions";
+import "../App.css";
 
 export default function Reset() {
   const dispatch = useDispatch();
@@ -9,9 +10,9 @@ export default function Reset() {
   };
   return (
     <>
-      <div className="reset">
-        <button onClick={resetForm}>Reset</button>
-      </div>
+      <button className="reset" onClick={resetForm}>
+        Reset
+      </button>
     </>
   );
 }

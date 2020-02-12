@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addRecommended } from "../redux/actions";
 import axios from "axios";
+import "../App.css";
 
 export default function Results() {
   const responses = useSelector(state => state.responses);
@@ -17,7 +18,12 @@ export default function Results() {
           dispatch(addRecommended(result));
         });
       } else {
-        dispatch(addRecommended({ name: "Tea or another drink..." }));
+        dispatch(
+          addRecommended({
+            name: "Tea or another drink",
+            description: "Coffee isn't for everyone and that's okay"
+          })
+        );
       }
     };
     pickRecommended();
@@ -25,7 +31,12 @@ export default function Results() {
 
   const renderRecommended = () => {
     if (recommended !== null) {
-      return <div className="recommended">{recommended.name}</div>;
+      return (
+        <>
+          <div className="recommended">{recommended.name}</div>
+          <div className="description">{recommended.description}</div>
+        </>
+      );
     }
   };
   return (

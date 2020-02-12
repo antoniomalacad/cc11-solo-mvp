@@ -3,8 +3,11 @@
 }
 
 .App-logo {
+  margin-top: 1vh;
   height: 10vmin;
   pointer-events: none;
+  filter: invert(64%) sepia(33%) saturate(471%) hue-rotate(127deg)
+    brightness(170%) contrast(100%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #64beb8;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +38,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header h1,
+.App-header p {
+  margin-top: 0vh;
+  margin-bottom: 1vh;
+}
+
+.Body {
+  background-color: beige;
+  height: 80vh;
+}
+
+.Body-header {
+  border-top: 1vh;
+  border-bottom: 1vh;
+  padding-top: 1vh;
+  font-size: 20pt;
+  font-weight: 700;
+}
+
+.Body-choices {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.choice {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  cursor: pointer;
+  width: 30vw;
+  margin: auto;
+  /* align-content: center;
+  text-align: center;
+  justify-content: center; */
+}
+
+.recommended,
+.description {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.recommended {
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+.reset {
+  margin-top: 3vh;
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { changeQuestion } from "../redux/actions";
+import "../App.css";
 
 export default function BodyHeader() {
   const questionIndex = useSelector(state => state.questionIndex);

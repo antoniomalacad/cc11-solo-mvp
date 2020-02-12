@@ -8,11 +8,13 @@ import {
   changeQuestion
 } from "../redux/actions";
 import axios from "axios";
+import "../App.css";
 
 export default function Choices() {
   const options = useSelector(state => state.options);
   const questionIndex = useSelector(state => state.questionIndex);
   const dispatch = useDispatch();
+  const bgc = "beige";
 
   useEffect(() => {
     const updateChoices = async () => {
@@ -41,11 +43,25 @@ export default function Choices() {
   const renderChoices = () => {
     return options.map(option => {
       return (
-        <div className="choice" value={JSON.stringify(option)} key={option.id}>
+        <div
+          className="choice"
+          value={JSON.stringify(option)}
+          key={option.id}
+          onMouseEnter={highlight}
+          onMouseLeave={unhighlight}
+        >
           {option.option}
         </div>
       );
     });
+  };
+
+  const highlight = e => {
+    e.target.style.background = "white";
+  };
+
+  const unhighlight = e => {
+    e.target.style.background = "beige";
   };
 
   return (

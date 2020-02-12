@@ -89,7 +89,7 @@ Run this script if you made changes to the table schemas or the seed data.
 
 Runs the server to communicate with the local database, enabling API requests between the app and the local database.
 
-## Learn More
+## Acknowledgements
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started). <br />
