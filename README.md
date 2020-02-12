@@ -4,7 +4,7 @@ This was created during my time as a student at Code Chrysalis.
 
 Coffee Picker is an app that helps the user select a coffee based on a set of questions.
 
-To use this app follow the following link: https://cc11-solo-mvp.herokuapp.com/
+To use this app: https://cc11-solo-mvp.herokuapp.com/
 
 To modify its implementation or check under the hood, follow the quick setup below.
 
@@ -92,5 +92,5 @@ Runs the server to communicate with the local database, enabling API requests be
 ## Learn More
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started). <br />
+[Heroku](https://www.heroku.com/) was used to host the project. <br />
