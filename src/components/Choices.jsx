@@ -14,7 +14,6 @@ export default function Choices() {
   const options = useSelector(state => state.options);
   const questionIndex = useSelector(state => state.questionIndex);
   const dispatch = useDispatch();
-  const bgc = "beige";
 
   useEffect(() => {
     const updateChoices = async () => {
